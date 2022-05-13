@@ -1,0 +1,41 @@
+<header>
+  <figure class="header--logo">
+      <img src="../../../assets/images/logo_yard_sale.svg" alt="header logo">
+  </figure>
+
+  <nav class="header--nav" [class.header--nav-active]="menuBtn">
+
+    <div class="header--close-menu">
+      <p (click)="handleMenuBtn()">Close</p>
+    </div>
+
+    <ul class="header--ul">
+      <li class="header--list">
+        <a href="#" class="header--link">Register</a>
+      </li>
+
+      <li class="header--list">
+        <a href="#" class="header--link">Home</a>
+      </li>
+
+      <li class="header--list">
+        <a href="#" class="header--link">Contact</a>
+      </li>
+
+      <li class="header--list">
+        <a href="#" class="header--link">About</a>
+      </li>
+
+      <li class="header--list">
+        <a href="#" class="header--link">
+          <img src="../../../assets/icons/icon_shopping_cart.svg" alt="catr icon" class="header--cart-icon">
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <figure class="header--menu-btn" (click)="handleMenuBtn()">
+    <img src="../../../assets/icons/icon_menu.svg" alt="">
+  </figure>
+</header>

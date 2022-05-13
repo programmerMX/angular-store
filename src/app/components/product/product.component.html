@@ -1,0 +1,16 @@
+<div class="main--product">
+  <app-img [imgURL]="product.image"></app-img>
+  <h2>{{product.title}}</h2>
+  <p>{{product.price | currency:'USD'}}</p>
+  <p>{{product.description}}</p>
+  <div class="main--product-btns">
+    <button>Add favorites</button>
+    <button (click)="addCart(product)" *ngIf="!product.addedCart; else addedProduct">
+      Add Cart
+    </button>
+    <ng-template #addedProduct>
+      <button>Added Product</button>
+    </ng-template>
+  </div>
+</div>
+

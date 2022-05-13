@@ -1,0 +1,30 @@
+.main--product{
+  border-bottom: 2px solid black;
+}
+
+.main--product h2{
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.main--product p{
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+
+.main--product-btns{
+  display: flex;
+  justify-content: center;
+
+}
+
+.main--product-btns button{
+  margin: 0 10px;
+}
+
+@media (min-width:600px){
+  .main--product{
+    border: 1px solid black;
+  }
+}
